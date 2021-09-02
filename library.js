@@ -15,7 +15,6 @@ const serachBook = () => {
                         number.textContent = '';
                         const p = document.createElement('p');
                         p.innerText = `Total Result:${books.docs.length}`;
-                        console.log(books.docs.length);
                         number.appendChild(p);
 
                         // check condition and call function
@@ -58,7 +57,6 @@ const booksFound = books => {
         p1.innerText = `Results Showing: ${books.length}`;
         number.appendChild(p1);
         books.forEach(book => {
-                console.log(book);
                 const div = document.createElement('div');
                 div.classList.add('col');
                 div.innerHTML = `
